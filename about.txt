@@ -16,3 +16,6 @@ I want to test "--no-ff" merge , so let's do it:
 
 ####
 now you know how manager the branches.
+
++++++++++++++
+now I am test...
