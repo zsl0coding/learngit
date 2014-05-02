@@ -1,0 +1,10 @@
+The well known command line is as follows:
+"git remote add origin git@github.com:zsl0coding/learngit.git"
+
+the word "origin" can be called by any other names, like "local2web" , 
+I prefer the name "local2web"..
+
+The command line above is just to connet local repository and the github server.The following command line is to push local repository:
+"git push -u local2web master"
+
+
