@@ -1,0 +1,18 @@
+I want to test "--no-ff" merge , so let's do it:
+1) git checkout -b branch_dev
+	so you are in the new branch "branch_dev"
+2)make some modifications, like rewrite about.txt or adding a new line.
+
+3)the commit in the branch "branch_dev"
+	git add about.txt
+	git commit -m "modified in branch_dev"
+4)then go back to branch "master" and merge branch_dev
+	git checkout master
+	git merge --no-ff -m "merge with no--ff" branch_dev
+
+5)look at the new log
+	git log --graph --pretty=oneline --abbrev-commit
+
+
+####
+now you know how manager the branches.
