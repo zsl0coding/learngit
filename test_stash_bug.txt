@@ -1,0 +1,25 @@
+Assuming that you are working on branch_dev now, but you have to fix a bug
+right away and the branch_dev need 2 days to complete, so what would you do?
+Here is the solution:
+1) stash the working branch_dev
+	git stash
+2)go back to "master" and make a new branch to fix the bug -- issue-bugNO
+	git checkout master
+	git checkout -b issue-bugNO
+3)do something to fix the bug , then commit
+	git ....
+	git commit -m "fix the bug -- issue-bugNO"
+4)go back to "master" and merge the branch "issue-bugNO"
+	git checkout master
+	git merge --no-ff -m "merged bug fixd NO" issue-bugNO
+5)delete the branch "issue-bugNO"
+	git branch -d issue-bugNO
+6)then go back to branch "branch_dev" , there are two ways:
+	1...	git stash list
+		git stash pop
+	2...	git stash list
+		git stash apply	stash@{0}
+##########
+now you know how to fix a bug then go back to work.
+		---2014-05-02 14:27
+
